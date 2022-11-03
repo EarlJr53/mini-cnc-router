@@ -29,7 +29,7 @@ def on_press(key):
         k = key.char  # single-char keys
     except:
         k = key.name  # other keys
-    if k in ['up', 'down', '0', '1', '2', '3', '4', '5']:  # keys of interest
+    if k in ['space', 'up', 'down', '0', '1', '2', '3', '4', '5']:  # keys of interest
         # Send command to Arduino
         serialPort.write(bytes(k, 'utf-8'))
 
@@ -38,4 +38,4 @@ listener = keyboard.Listener(on_press=on_press)
 listener.start()  # start to listen on a separate thread
 
 while listener.is_alive:
-    print("alive")
+    print("")
