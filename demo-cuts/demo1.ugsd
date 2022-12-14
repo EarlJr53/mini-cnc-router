@@ -1,0 +1,48 @@
+{
+  "settings": {
+    "feedSpeed": 150,
+    "plungeSpeed": 400,
+    "toolDiameter": 3.175,
+    "stockThickness": 6.5,
+    "safeHeight": 5.0,
+    "preferredUnits": "MM",
+    "toolStepOver": 0.3,
+    "depthPerPass": 0.5,
+    "spindleSpeed": 10000.0
+  },
+  "entities": [
+    {
+      "text": "π",
+      "fontName": "Rasa SemiBold",
+      "startDepth": 0.0,
+      "cutDepth": 1.0,
+      "cutType": "POCKET",
+      "transform": {
+        "m00": 3.127145359019264,
+        "m10": 0.0,
+        "m01": 0.0,
+        "m11": 3.091848906560636,
+        "m02": 5.485288966725044,
+        "m12": 8.82127236580517
+      },
+      "name": "Text",
+      "type": "TEXT"
+    },
+    {
+      "startDepth": 0.0,
+      "cutDepth": 6.5,
+      "cutType": "ON_PATH",
+      "transform": {
+        "m00": 4.0,
+        "m10": 0.0,
+        "m01": 0.0,
+        "m11": 4.0,
+        "m02": 1.0,
+        "m12": 1.0
+      },
+      "name": "Ellipse",
+      "type": "ELLIPSE"
+    }
+  ],
+  "version": "1"
+}
